@@ -155,3 +155,375 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 1965ms (Views: 1911.7ms | ActiveRecord: 5.4ms | Allocations: 136940)
 
 
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /usr/local/opt/ruby/bin/rake:23)
+Started GET "/" for ::1 at 2020-09-01 22:48:58 +0800
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (7.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 35.2ms | Allocations: 3772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 350ms (Views: 282.7ms | ActiveRecord: 8.0ms | Allocations: 13002)
+
+
+Started GET "/" for ::1 at 2020-09-01 22:51:38 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2045ms (Views: 2026.0ms | ActiveRecord: 1.1ms | Allocations: 127218)
+
+
+Started GET "/" for ::1 at 2020-09-01 22:53:33 +0800
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 25.8ms | Allocations: 5207)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1871ms (Views: 1842.3ms | ActiveRecord: 2.4ms | Allocations: 136614)
+
+
+Started GET "/" for ::1 at 2020-09-01 23:12:31 +0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.8ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 41.3ms | Allocations: 2876)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 54.2ms | Allocations: 3515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 228ms (Views: 203.6ms | ActiveRecord: 2.8ms | Allocations: 9574)
+
+
+Started GET "/" for ::1 at 2020-09-01 23:42:19 +0800
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 1211.3ms | Allocations: 156115)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 1236.7ms | Allocations: 156540)
+Completed 500 Internal Server Error in 1300ms (ActiveRecord: 2.5ms | Allocations: 158023)
+
+
+
+ActionView::Template::Error - undefined local variable or method `tweet' for #<#<Class:0x00007ff035b87ba8>:0x00007ff035b7ea08>
+Did you mean?  tweeet
+               @tweeets:
+  app/views/tweeets/_feed.html.erb:30:in `view template'
+  app/views/tweeets/_feed.html.erb:30
+  app/views/tweeets/_feed.html.erb:14
+  app/views/tweeets/index.html.erb:4
+
+Started POST "/__better_errors/e357d4c2f2509cc1/variables" for ::1 at 2020-09-01 23:42:21 +0800
+Started GET "/" for ::1 at 2020-09-01 23:42:44 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.9ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 12.7ms | Allocations: 910)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 1475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 174ms (Views: 143.2ms | ActiveRecord: 0.9ms | Allocations: 7904)
+
+
+Started GET "/" for ::1 at 2020-09-01 23:44:03 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 17.0ms | Allocations: 902)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 1198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 188ms (Views: 173.1ms | ActiveRecord: 1.2ms | Allocations: 7590)
+
+
+Started GET "/" for ::1 at 2020-09-01 23:47:58 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_feed.html.erb (Duration: 10.0ms | Allocations: 1356)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 1658)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 3155)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <div class="column is-half">
+  <article class="media box">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+      </p>
+    </figure>
+    <div class="media-content">
+
+    </div>
+  </article>
+</div>
+
+<% @tweeets.each do |tweeet| %>
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <strong>Bobby Brown</strong><br />
+          <small>@bbrwn</small><br />
+          <p><%= tweeet.tweeet %></p>
+        </div>
+        <nav class="level">
+          <div class="level-left is-mobile">
+            <%= link_to tweeet, class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to edit_tweeet_path(tweeet), class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to tweeet, method :delete, data: { confirm: "You sure sure?" }, class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+            <% end %>
+
+          </div>
+        </nav>
+      </div>
+
+    </article>
+  </div>
+<% end %>
+:
+  app/views/tweeets/index.html.erb:4
+
+Started POST "/__better_errors/7f275114575f379c/variables" for ::1 at 2020-09-01 23:47:59 +0800
+  [1m[36mTweeet Load (9.8ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-09-01 23:48:32 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_feed.html.erb (Duration: 4.3ms | Allocations: 1353)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1654)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms | Allocations: 3141)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <div class="column is-half">
+  <article class="media box">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+      </p>
+    </figure>
+    <div class="media-content">
+
+    </div>
+  </article>
+</div>
+
+<% @tweeets.each do |tweeet| %>
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <strong>Bobby Brown</strong><br />
+          <small>@bbrwn</small><br />
+          <p><%= tweeet.tweeet %></p>
+        </div>
+        <nav class="level">
+          <div class="level-left is-mobile">
+            <%= link_to tweeet, class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to edit_tweeet_path(tweeet), class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to tweeet, method :delete, data: { confirm: "You sure sure?" } do %>
+              <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+            <% end %>
+
+          </div>
+        </nav>
+      </div>
+
+    </article>
+  </div>
+<% end %>
+:
+  app/views/tweeets/index.html.erb:4
+
+Started POST "/__better_errors/4b6661b4c041fec1/variables" for ::1 at 2020-09-01 23:48:33 +0800
+  [1m[36mTweeet Load (1.0ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-09-01 23:49:18 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_feed.html.erb (Duration: 10.5ms | Allocations: 1342)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1405)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 2071)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <div class="column is-half">
+  <article class="media box">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+      </p>
+    </figure>
+    <div class="media-content">
+
+    </div>
+  </article>
+</div>
+
+<% @tweeets.each do |tweeet| %>
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/64x64.png" alt="temp">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <strong>Bobby Brown</strong><br />
+          <small>@bbrwn</small><br />
+          <p><%= tweeet.tweeet %></p>
+        </div>
+        <nav class="level">
+          <div class="level-left is-mobile">
+            <%= link_to tweeet, class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to edit_tweeet_path(tweeet), class: 'level-item' do %>
+              <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+            <% end %>
+            <%= link_to tweeet, method :delete, data: { confirm: "You sure sure?" } do %>
+              <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+            <% end %>
+
+          </div>
+        </nav>
+      </div>
+
+    </article>
+  </div>
+<% end %>
+:
+  app/views/tweeets/index.html.erb:4
+
+Started POST "/__better_errors/30a9e34466fa7936/variables" for ::1 at 2020-09-01 23:49:18 +0800
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-09-01 23:49:51 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (4.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 22.0ms | Allocations: 1091)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1392)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 88.0ms | ActiveRecord: 4.6ms | Allocations: 7799)
+
+
+Started GET "/" for ::1 at 2020-09-01 23:51:15 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.8ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 24.7ms | Allocations: 1078)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 34.2ms | Allocations: 1374)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 138ms (Views: 121.5ms | ActiveRecord: 1.8ms | Allocations: 7752)
+
+
+Started GET "/tweeets/1/edit" for ::1 at 2020-09-01 23:52:45 +0800
+Processing by TweeetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTweeet Load (8.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+  Rendering tweeets/edit.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (Duration: 219.4ms | Allocations: 3847)
+  Rendered tweeets/edit.html.erb within layouts/application (Duration: 226.7ms | Allocations: 4230)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 471ms (Views: 292.6ms | ActiveRecord: 8.4ms | Allocations: 15805)
+
+
+Started GET "/tweeets" for ::1 at 2020-09-01 23:52:49 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (1.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 7.9ms | Allocations: 793)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 853)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 1.5ms | Allocations: 5988)
+
+
+Started GET "/tweeets/1" for ::1 at 2020-09-01 23:52:50 +0800
+Processing by TweeetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTweeet Load (0.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:67:in `set_tweeet'
+  Rendering tweeets/show.html.erb within layouts/application
+  Rendered tweeets/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 38.6ms | ActiveRecord: 0.5ms | Allocations: 6027)
+
+
+Started GET "/tweeets" for ::1 at 2020-09-01 23:52:52 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (3.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 8.8ms | Allocations: 794)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 854)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 3.1ms | Allocations: 5995)
+
+
+Started GET "/tweeets" for ::1 at 2020-09-01 23:58:50 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (2.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 12.4ms | Allocations: 1081)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 36.1ms | Allocations: 3151)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 2.3ms | Allocations: 4641)
+
+
+
+ActionView::Template::Error - Missing partial tweeets/_who-to-follow, application/_who-to-follow with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/lucid/Desktop/twitter-on-rails/app/views"
+  * "/usr/local/opt/gems/gems/devise-4.7.2/app/views"
+  * "/usr/local/opt/gems/gems/actiontext-6.0.3.2/app/views"
+  * "/usr/local/opt/gems/gems/actionmailbox-6.0.3.2/app/views"
+:
+  app/views/tweeets/index.html.erb:5:in `view template'
+  app/views/tweeets/index.html.erb:5
+
+Started POST "/__better_errors/308e3105a185a506/variables" for ::1 at 2020-09-01 23:58:51 +0800
+Started GET "/tweeets" for ::1 at 2020-09-01 23:59:24 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:14
+  Rendered tweeets/_feed.html.erb (Duration: 17.2ms | Allocations: 1078)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 1.4ms | Allocations: 131)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 29.3ms | Allocations: 1720)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 98.6ms | ActiveRecord: 0.7ms | Allocations: 8128)
+
+
