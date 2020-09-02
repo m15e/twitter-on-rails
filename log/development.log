@@ -902,3 +902,190 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 76ms (Views: 57.9ms | ActiveRecord: 1.3ms | Allocations: 20981)
 
 
+Started GET "/users/log_in" for ::1 at 2020-09-02 12:01:55 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/log_in"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2020-09-02 12:02:01 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.0ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.6ms | Allocations: 9082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 72.1ms | ActiveRecord: 0.0ms | Allocations: 16090)
+
+
+Started GET "/users/password/new" for ::1 at 2020-09-02 12:02:04 +0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 9364)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-02 12:02:06 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 31.2ms | Allocations: 8347)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 13613)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-02 12:02:07 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 30.4ms | Allocations: 9714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.0ms | Allocations: 15577)
+
+
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToTweeets (20200902040436)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "tweeets" ADD "user_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (20.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200902040436"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for ::1 at 2020-09-02 12:11:50 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"qD0H/k8mZ0NYX/9YN/7SkVM0TXwAap0R28S68nLyzKLElmQsFYthtJsBcVarEdNna5Rl0r5XieeGZigZypjlnQ==", "user"=>{"name"=>"x", "username"=>"xx", "email"=>"x@x.x", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "x@x.x"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "x@x.x"], ["encrypted_password", "$2a$12$0lJvClHzqmyi.ZByyidGaOO4GhVRQZQwRGTFt7zmgzpDlPuR946Py"], ["created_at", "2020-09-02 04:11:51.127027"], ["updated_at", "2020-09-02 04:11:51.127027"], ["name", "x"], ["username", "xx"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 427ms (ActiveRecord: 3.9ms | Allocations: 15905)
+
+
+Started GET "/" for ::1 at 2020-09-02 12:11:51 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trend.html.erb (Duration: 3.4ms | Allocations: 99)
+  Rendered tweeets/_form.html.erb (Duration: 22.4ms | Allocations: 3445)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:13
+  Rendered tweeets/_feed.html.erb (Duration: 31.4ms | Allocations: 4763)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 2.8ms | Allocations: 131)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 43.6ms | Allocations: 7793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 81.3ms | ActiveRecord: 1.0ms | Allocations: 17430)
+
+
+Started POST "/tweeets" for ::1 at 2020-09-02 12:11:55 +0800
+Processing by TweeetsController#create as HTML
+  Parameters: {"authenticity_token"=>"SdMXcHzCR9yXA2rQxHs18bVhopCVTlbEKZKx1l1XCHKaqlWtOlq8z66rZj1zUrvxlZqDriq04K6mrUyYcA0ELg==", "tweeet"=>{"tweeet"=>"xx"}, "commit"=>"Create Tweeet"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms | Allocations: 4970)
+
+
+
+NoMethodError - undefined method `tweets' for #<User:0x00007fe9afbf3858>
+Did you mean?  tweeets
+               tweeets=:
+  app/controllers/tweeets_controller.rb:29:in `create'
+
+Started POST "/__better_errors/f47e1765f838deac/variables" for ::1 at 2020-09-02 12:11:55 +0800
+Started POST "/tweeets" for ::1 at 2020-09-02 12:12:12 +0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#create as HTML
+  Parameters: {"authenticity_token"=>"SdMXcHzCR9yXA2rQxHs18bVhopCVTlbEKZKx1l1XCHKaqlWtOlq8z66rZj1zUrvxlZqDriq04K6mrUyYcA0ELg==", "tweeet"=>{"tweeet"=>"xx"}, "commit"=>"Create Tweeet"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:32:in `block in create'
+  [1m[36mTweeet Create (6.0ms)[0m  [1m[32mINSERT INTO "tweeets" ("tweeet", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["tweeet", "xx"], ["created_at", "2020-09-02 04:12:12.885169"], ["updated_at", "2020-09-02 04:12:12.885169"], ["user_id", 1]]
+  ↳ app/controllers/tweeets_controller.rb:32:in `block in create'
+  [1m[35m (32.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 168ms (ActiveRecord: 40.2ms | Allocations: 21307)
+
+
+Started GET "/" for ::1 at 2020-09-02 12:12:13 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trend.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered tweeets/_form.html.erb (Duration: 26.7ms | Allocations: 3134)
+  [1m[36mTweeet Load (3.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:13
+  Rendered tweeets/_feed.html.erb (Duration: 36.7ms | Allocations: 4326)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 4509)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 76.0ms | ActiveRecord: 3.5ms | Allocations: 9814)
+
+
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started DELETE "/tweeets/2" for ::1 at 2020-09-02 12:13:32 +0800
+Processing by TweeetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8y/i2WWqZ2PRlfdOetRcnLR0zPCSGChSL7sNZ4thc4sgVqAEIzKccOg9+6PN/dKclI/tzi3injighPAppjt/1w==", "id"=>"2"}
+  [1m[36mTweeet Load (1.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" WHERE "tweeets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tweeets_controller.rb:69:in `set_tweeet'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:59:in `destroy'
+  [1m[36mTweeet Destroy (3.6ms)[0m  [1m[31mDELETE FROM "tweeets" WHERE "tweeets"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/tweeets_controller.rb:59:in `destroy'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweeets_controller.rb:59:in `destroy'
+Redirected to http://localhost:3000/tweeets
+Completed 302 Found in 74ms (ActiveRecord: 9.8ms | Allocations: 4557)
+
+
+Started GET "/tweeets" for ::1 at 2020-09-02 12:13:32 +0800
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_trend.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered tweeets/_form.html.erb (Duration: 29.4ms | Allocations: 3076)
+  [1m[36mTweeet Load (0.3ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:13
+  Rendered tweeets/_feed.html.erb (Duration: 38.5ms | Allocations: 4105)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 45.2ms | Allocations: 4288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 133.2ms | ActiveRecord: 0.3ms | Allocations: 9403)
+
+
+  [1m[36mTweeet Load (0.6ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY "tweeets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
